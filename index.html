@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayooo naii balikann!!!</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffd9e0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .question {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #555;
+        }
+        .buttons {
+            position: relative;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            position: absolute;
+        }
+        .yes {
+            background-color: #ff6b81;
+            color: white;
+            position: relative;
+        }
+        .no {
+            background-color: #ff6b81;
+            color: white;
+            position:  absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="pocoyo.png" alt="Cute Image" width="25%">
+        <div class="question">Ayoo balikann, aku maksa!</div>
+        <div class="buttons">
+            <a href="heart.html"><button class="btn yes">Ayooo</button></a>
+            <button class="btn no" id="noBtn">Gamau</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById("noBtn").addEventListener("mouseover", function() {
+            let x = Math.random() * window.innerWidth - 100;
+            let y = Math.random() * window.innerHeight - 50;
+            this.style.left = `${x}px`;
+            this.style.top = `${y}px`;
+        });
+    </script>
+</body>
+</html>
